@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    {% if form %}
+        <form method="POST" >
+            {{ form.as_p }}
+            {% csrf_token %}
+        <input type="submit" value="Submit!">
+        </form>
+    {% endif %}
+</div>
+</body>
+</html>

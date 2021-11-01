@@ -1,0 +1,23 @@
+
+{% extends 'appFour/base.html' %}
+{% block body_block %}
+<h1>Welcome to relative url template!</h1>
+<h2>
+    <a class="text-white" href="{% url 'home:index' %}">
+        Index
+    </a><br>
+    <a class="text-white" href="{% url 'appfour:index' %}">
+        Index page
+    </a><br>
+    <a class="text-white" href="{% url 'appfour:other' %}">
+        Other page
+    </a>
+    <br>
+     <a class="text-white" href="{% url 'admin:index' %}">
+        admin page
+    </a><br>
+    <a class="text-white" href="{% url 'basicapp:index' %}">
+        basicApp page
+    </a>
+</h2>
+{% endblock %}
